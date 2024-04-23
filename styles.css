@@ -213,7 +213,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.795);
 }
 .social-media {
-  padding: 2rem 0;
+  padding: 0 2rem;
   text-align: center;
 }
 .social-media a {
@@ -243,15 +243,22 @@ hr {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2rem;
+  padding: 0 2rem;
   padding-bottom: 140px;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .social-link {
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 1rem;
-
+  margin: 0;
   list-style: none;
   padding: 0;
 }
