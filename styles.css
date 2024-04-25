@@ -1,10 +1,13 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+:root {
+  --primary-color: #ffe8ba;
+}
 
 .page-wrapper {
   margin: 0 auto;
-  background-color: #ffe8ba;
+  background-color: var(--primary-color);
   min-width: 400px;
 }
 body {
@@ -44,6 +47,8 @@ nav {
 /*  */
 main {
   padding: 0 2rem;
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 main h1 {
   text-align: center;
@@ -74,6 +79,8 @@ hr {
   padding: 2.1rem 2rem;
   display: grid;
   grid-template-columns: 1fr;
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 .welcoming-section h2 {
   font-size: 66px;
@@ -97,6 +104,9 @@ hr {
   align-items: center;
   justify-items: start;
   gap: 1rem;
+
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 .quick-section img {
   width: 50%;
@@ -135,6 +145,8 @@ hr {
   grid-template-columns: 1fr 1fr;
   width: 100%;
   background-color: #e6d8f9;
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 .first-item {
   display: flex;
@@ -180,6 +192,8 @@ hr {
   align-items: center;
   text-align: center;
   padding: 104px 0;
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 .friends h2 {
   font-size: 72px;
@@ -215,6 +229,8 @@ hr {
 .social-media {
   padding: 0 2rem;
   text-align: center;
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 .social-media a {
   color: black;
@@ -245,6 +261,8 @@ footer {
   grid-template-columns: 1fr 1fr;
   padding: 0 2rem;
   padding-bottom: 140px;
+  animation-name: transition-animation;
+  animation-duration: 4s;
 }
 .socials {
   display: flex;
@@ -368,5 +386,17 @@ footer {
   .signup-section {
     grid-column: 3/4;
     grid-row: 2;
+  }
+}
+
+@keyframes transition-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
