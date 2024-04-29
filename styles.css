@@ -1,6 +1,7 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
   --primary-color: #ffe8ba;
 }
@@ -296,7 +297,6 @@ footer {
   width: 240px;
   padding: 1.6rem;
   border: none;
-  color: rgb(253, 253, 253);
   letter-spacing: 1.2px;
 }
 .signup-section button {
